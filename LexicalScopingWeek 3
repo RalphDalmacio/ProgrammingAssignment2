@@ -14,13 +14,13 @@
   
                          get <- function() {x}
   
-                 settoInverse <- function(inverse) {inv <<- inverse}
+                 setInverse <- function(inverse) {inv <<- inverse}
   
   
             gettoInverse <- function() {inv}
   
   
-  list(set = set, get = get, settoInverse = settoInverse, gettoInverse = gettoInverse)
+  list(set = set, get = get, setInverse = setInverse, gettoInverse = gettoInverse)
   
   
 }
@@ -46,7 +46,7 @@ cacheSolve <- function(x, ...){
   
       inv <- solve(mat, ...)
   
-        x$settoInverse(inv)
+        x$setInverse(inv)
   
   
                      inv
