@@ -11,6 +11,7 @@
     
   }
   
+  
                          get <- function() {x}
   
                  settoInverse <- function(inverse) {inv <<- inverse}
@@ -25,6 +26,7 @@
 }
 
 
+
 cacheSolve <- function(x, ...){
 
   inv <- x$gettoInverse()
@@ -34,6 +36,8 @@ cacheSolve <- function(x, ...){
                 message("get cached to  get data")
     
                        return(inv)
+    
+    
     
     
   }
@@ -46,6 +50,8 @@ cacheSolve <- function(x, ...){
   
   
                      inv
+  
+  
   
   
 }
